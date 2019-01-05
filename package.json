@@ -24,6 +24,7 @@
         "vue-template-compiler": "^2.5.21"
     },
     "dependencies": {
+        "noty": "^3.2.0-beta",
         "postcss-css-variables": "^0.11.0",
         "postcss-import": "^12.0.1",
         "precss": "^4.0.0"

@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('front.index');
 });
+
+Route::post('/sendfeedback', function (\Illuminate\Http\Request $request) {
+    dd($request->input());
+})->name('frontend.feedback');

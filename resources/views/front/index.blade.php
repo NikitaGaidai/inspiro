@@ -636,48 +636,7 @@
                         <!--end row-->
                     </div>
                     <!--end col-xl-5 col-lg-6 col-md-12 col-sm-12-->
-                    <div class="col-xl-7 col-lg-6 col-md-12 col-sm-12">
-                        <h4>Обратная связь</h4>
-
-                        <form id="form-contact" method="post" class="form clearfix">
-                            <div class="row">
-                                <div class="col-md-6 col-sm-6">
-                                    <div class="form-group">
-                                        <label for="form-contact-name">Ваше имя</label>
-                                        <input type="text" class="form-control" id="form-contact-name" name="name" placeholder="Иван" required>
-                                    </div>
-                                    <!--end form-group -->
-                                </div>
-                                <!--end col-md-6 col-sm-6 -->
-                                <div class="col-md-6 col-sm-6">
-                                    <div class="form-group">
-                                        <label for="form-contact-email">Электронная почта</label>
-                                        <input type="email" class="form-control" id="form-contact-email" name="email" placeholder="mail@domain.ru" required>
-                                    </div>
-                                    <!--end form-group -->
-                                </div>
-                                <!--end col-md-6 col-sm-6 -->
-                            </div>
-                            <!--end row -->
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <label for="form-contact-message">Сообщение</label>
-                                        <textarea class="form-control" id="form-contact-message" rows="8" name="message" placeholder="Введите текст сообщения..." required></textarea>
-                                    </div>
-                                    <!--end form-group -->
-                                </div>
-                                <!--end col-md-12 -->
-                            </div>
-                            <!--end row -->
-                            <div class="form-group clearfix">
-                                <button type="submit" class="btn pull-right btn-default" id="form-contact-submit">Отправить сообщение</button>
-                            </div>
-                            <!--end form-group -->
-                            <div class="form-contact-status"></div>
-                        </form>
-                        <!--end form-contact -->
-                    </div>
+                    <feedback-form title="Обратная связь" action="{{ route('frontend.feedback') }}" sound="{{ asset('sounds/notify.mp3') }}"></feedback-form>
                     <!--end col-xl-7-->
                 </div>
                 <!--end row-->

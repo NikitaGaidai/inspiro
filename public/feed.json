@@ -1,0 +1,7 @@
+{
+  "notifications": [
+    {"bell": 1},
+    {"message": 1}
+  ],
+  "refresh_time" :  1
+}
